@@ -7,8 +7,8 @@ beta_3 = -0.11
 beta_4 = 0.44
 beta_5 = 0.10
 
-time_recen = np.linspace(-20, 10, 1500)  # recentered time value, with beginning of HRT at 0
-post_time = np.linspace(0, 10, 1500)  # time after beginning of HRT
+time_recen = np.linspace(-20, 11, 1500)  # recentered time value, with beginning of HRT at 0
+post_time = np.linspace(0, 11, 1500)  # time after beginning of HRT
 # hematocrit equation from longitudinal paper - individual factors are negated as looking at average
 # the fudge factor is 45 (or intercept value) to account for beginning HCT values
 # use m2 bc it adjusted for most recent Hct result before HT initiation

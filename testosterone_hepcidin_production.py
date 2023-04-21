@@ -1,8 +1,6 @@
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 import numpy as np
-import math
-
 
 def change_in_hepcidin(hep, t):
     return 3.2774*np.exp(-0.021 * t) - hep / (74.1/60)

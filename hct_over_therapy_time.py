@@ -15,11 +15,16 @@ post_time = np.linspace(0, 11, 1500)  # time after beginning of HRT
 """hct_TM_m1 = 45 + -0.07 + (0.06 * time_recen) + (-0.13 * post_time) + (0.42 * time_recen) + (0.13 * post_time)"""
 hct_TM_m2 = 45 + beta_1 + (beta_2 * time_recen) + (beta_3 * post_time) + (beta_4 * time_recen) + (beta_5 * post_time)
 # plot graph of TM Hct pop averages
+cis_man = []
+for val in time_recen:
+    cis_man.append(43)
 """plt.plot(time_recen, hct_TM_m1, label = "model 1")"""
 plt.plot(time_recen, hct_TM_m2, label="model 2")
+plt.plot(time_recen, cis_man , label="cis man")
+plt.legend(['TM', 'Cis Man'])
 plt.xlabel("Time in years, 0 = beginning of HT")
 plt.ylabel("Average Hct percentage")
-plt.title("Population Avg of Hct Values for TM people before and after HT")
+plt.title("Population Avg of Hct Values for TM and Cis Men before and after HT")
 plt.show()
 """ hct eqs for sensitivity analysis are marked w sa (1-4)
  beta 5 is the variable that is manipulated for sensitivity analysis, this is bc beta 5

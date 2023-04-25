@@ -17,6 +17,7 @@ for weight in body_weights:
     rbc_pp.append(((10**6 * (14.625 + (hep_vals - 6.66749)/(-0.3149))) * weight)/(10**12))
 plt.xlabel("Hepcidin concentration in nM")
 plt.ylabel("Total RBC production patient (*10^12) ")
+plt.title("Total patient RBC production in response to hepcidin concentration")
 plt.plot(hep_vals, rbc_pp[0], label="Patient A with body weight of 65kg")
 plt.plot(hep_vals, rbc_pp[1], label="Patient B with body weight of 73kg")
 plt.plot(hep_vals, rbc_pp[2], label="Patient C with body weight of 57.1kg")

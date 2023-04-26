@@ -17,7 +17,7 @@ res = odeint(change_in_hepcidin, hep0, t1)
 plt.plot(t1, res, 'b')
 plt.plot(t2, level_val, 'b')
 plt.xlabel("Hours")
-plt.ylabel("Rate of hepcidin mRNA transcription")
+plt.ylabel("Rate of hepcidin mRNA transcription (a.u.)")
 plt.title("Hepcidin mRNA transcription reduction due to testosterone dose")
 plt.show()
 

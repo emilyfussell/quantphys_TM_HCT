@@ -23,4 +23,6 @@ plt.plot(hep_vals, rbc_pp[1], label="Patient B with body weight of 73kg")
 plt.plot(hep_vals, rbc_pp[2], label="Patient C with body weight of 57.1kg")
 plt.plot(hep_vals, rbc_pp[3], label="Patient D with body weight of 46.4kg")
 plt.plot(hep_vals, rbc_pp[4], label="Patient E with body weight of 125kg")
+plt.legend(['Patient A with a body weight of 65 kg', 'Patient B with a body weight of 73 kg', 'Patient C with a body weight of 57.1 kg',
+            'Patient D with a body weight of 46.4 kg', 'Patient E with a body weight of 125 kg'])
 plt.show()
